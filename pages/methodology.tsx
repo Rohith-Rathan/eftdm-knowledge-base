@@ -10,7 +10,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
   PlayIcon,
-  DownloadIcon
+  ArrowDownTrayIcon
 } from '@heroicons/react/24/outline'
 
 export default function Methodology() {
@@ -241,7 +241,7 @@ export default function Methodology() {
                 Try Interactive Demo
               </Link>
               <Link href="/templates" className="bg-white text-primary-600 hover:bg-gray-50 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
-                <DownloadIcon className="h-5 w-5 inline mr-2" />
+                <ArrowDownTrayIcon className="h-5 w-5 inline mr-2" />
                 Download Templates
               </Link>
             </div>
@@ -391,7 +391,7 @@ export default function Methodology() {
                         Test This Phase
                       </Link>
                       <Link href={`/templates#phase-${phase.id}`} className="btn-secondary">
-                        <DownloadIcon className="h-4 w-4 mr-2" />
+                        <ArrowDownTrayIcon className="h-4 w-4 mr-2" />
                         Download Templates
                       </Link>
                     </div>
@@ -466,7 +466,7 @@ export default function Methodology() {
                 Try Interactive Demo
               </Link>
               <Link href="/templates" className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
-                <DownloadIcon className="h-5 w-5 inline mr-2" />
+                <ArrowDownTrayIcon className="h-5 w-5 inline mr-2" />
                 Download Complete Package
               </Link>
             </div>

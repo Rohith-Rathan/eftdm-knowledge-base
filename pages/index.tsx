@@ -7,7 +7,7 @@ import {
   DocumentTextIcon, 
   CodeBracketIcon,
   PlayIcon,
-  DownloadIcon,
+  ArrowDownTrayIcon,
   ChevronRightIcon,
   CheckCircleIcon,
   StarIcon
@@ -270,7 +270,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/templates" className="bg-white text-primary-600 hover:bg-gray-50 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
-                <DownloadIcon className="h-5 w-5 inline mr-2" />
+                <ArrowDownTrayIcon className="h-5 w-5 inline mr-2" />
                 Download Templates
               </Link>
               <Link href="/examples" className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">

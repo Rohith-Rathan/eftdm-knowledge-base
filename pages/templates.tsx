@@ -6,7 +6,7 @@ import {
   RocketLaunchIcon, 
   DocumentTextIcon, 
   CodeBracketIcon,
-  DownloadIcon,
+  ArrowDownTrayIcon,
   ChevronDownIcon,
   ChevronRightIcon,
   CheckCircleIcon,
@@ -262,7 +262,7 @@ export default function Templates() {
                   </>
                 ) : (
                   <>
-                    <DownloadIcon className="h-5 w-5 inline mr-2" />
+                    <ArrowDownTrayIcon className="h-5 w-5 inline mr-2" />
                     Download Complete Package
                   </>
                 )}
@@ -359,7 +359,7 @@ export default function Templates() {
                               </>
                             ) : (
                               <>
-                                <DownloadIcon className="h-4 w-4 mr-2" />
+                                <ArrowDownTrayIcon className="h-4 w-4 mr-2" />
                                 Download
                               </>
                             )}
@@ -445,7 +445,7 @@ export default function Templates() {
                   </>
                 ) : (
                   <>
-                    <DownloadIcon className="h-5 w-5 inline mr-2" />
+                    <ArrowDownTrayIcon className="h-5 w-5 inline mr-2" />
                     Download Complete Package
                   </>
                 )}
