@@ -7,7 +7,7 @@ import {
   DocumentTextIcon, 
   CodeBracketIcon,
   EyeIcon,
-  DownloadIcon,
+  ArrowDownTrayIcon,
   ChevronDownIcon,
   ChevronRightIcon,
   CheckCircleIcon,
@@ -312,7 +312,7 @@ export default function Examples() {
                 Try Interactive Demo
               </Link>
               <Link href="/templates" className="bg-white text-primary-600 hover:bg-gray-50 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
-                <DownloadIcon className="h-5 w-5 inline mr-2" />
+                <ArrowDownTrayIcon className="h-5 w-5 inline mr-2" />
                 Download Templates
               </Link>
             </div>
@@ -469,7 +469,7 @@ export default function Examples() {
 
                         <div className="space-y-3">
                           <button className="w-full btn-primary">
-                            <DownloadIcon className="h-4 w-4 mr-2" />
+                            <ArrowDownTrayIcon className="h-4 w-4 mr-2" />
                             Download Project
                           </button>
                           <button className="w-full btn-secondary">
@@ -504,7 +504,7 @@ export default function Examples() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/templates" className="bg-white text-primary-600 hover:bg-gray-50 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
-                <DownloadIcon className="h-5 w-5 inline mr-2" />
+                <ArrowDownTrayIcon className="h-5 w-5 inline mr-2" />
                 Download Templates
               </Link>
               <Link href="/test" className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
