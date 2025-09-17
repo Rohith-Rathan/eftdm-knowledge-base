@@ -13,7 +13,7 @@ import {
   CheckCircleIcon,
   StarIcon,
   FolderIcon,
-  ExternalLinkIcon
+  ArrowTopRightOnSquareIcon
 } from '@heroicons/react/24/outline'
 
 export default function Examples() {
@@ -473,7 +473,7 @@ export default function Examples() {
                             Download Project
                           </button>
                           <button className="w-full btn-secondary">
-                            <ExternalLinkIcon className="h-4 w-4 mr-2" />
+                            <ArrowTopRightOnSquareIcon className="h-4 w-4 mr-2" />
                             View Live Demo
                           </button>
                           <button className="w-full btn-secondary">
