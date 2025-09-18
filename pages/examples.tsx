@@ -277,15 +277,18 @@ export default function Examples() {
                 <Link href="/" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <Link href="/methodology" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Methodology
-                </Link>
-                <Link href="/templates" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Templates
-                </Link>
-                <Link href="/examples" className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Examples
-                </Link>
+                    <Link href="/methodology" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                      Methodology
+                    </Link>
+                    <Link href="/getting-started" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                      Getting Started
+                    </Link>
+                    <Link href="/templates" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                      Templates
+                    </Link>
+                    <Link href="/examples" className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                      Examples
+                    </Link>
                 <Link href="/test" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                   Test Components
                 </Link>

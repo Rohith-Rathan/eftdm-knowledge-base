@@ -116,6 +116,9 @@ export default function Home() {
                 <Link href="/methodology" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                   Methodology
                 </Link>
+                <Link href="/getting-started" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                  Getting Started
+                </Link>
                 <Link href="/templates" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                   Templates
                 </Link>
@@ -143,13 +146,13 @@ export default function Home() {
               interactive templates, and real-world examples.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/methodology" className="btn-primary text-lg px-8 py-3">
+              <Link href="/getting-started" className="btn-primary text-lg px-8 py-3">
+                <RocketLaunchIcon className="h-5 w-5 inline mr-2" />
+                Get Started
+              </Link>
+              <Link href="/methodology" className="bg-white text-primary-600 hover:bg-gray-50 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
                 <BookOpenIcon className="h-5 w-5 inline mr-2" />
                 Learn Methodology
-              </Link>
-              <Link href="/test" className="bg-white text-primary-600 hover:bg-gray-50 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
-                <PlayIcon className="h-5 w-5 inline mr-2" />
-                Try Interactive Demo
               </Link>
             </div>
           </div>
