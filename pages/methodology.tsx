@@ -236,8 +236,8 @@ export default function Methodology() {
               EFTDM Methodology
             </h1>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              A comprehensive 7-phase development process with quality gates, 
-              automated validation, and real-time testing for production-ready applications.
+              A comprehensive 7-phase development process with Cursor AI integration, 
+              quality gates, automated validation, and real-time testing for production-ready applications.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/test" className="btn-primary text-lg px-8 py-3">

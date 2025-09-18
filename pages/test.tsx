@@ -352,8 +352,8 @@ export default function Test() {
               Interactive Test Components
             </h1>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Test EFTDM methodology components interactively with real-time validation, 
-              quality gates, and automated testing workflows.
+              Test EFTDM methodology components interactively with Cursor AI integration, 
+              real-time validation, quality gates, and automated testing workflows.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 

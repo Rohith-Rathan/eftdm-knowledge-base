@@ -52,56 +52,56 @@ export default function GettingStarted() {
     {
       id: 3,
       title: "Prepare Your Project",
-      description: "Set up your development environment",
+      description: "Set up your development environment with Cursor AI",
       icon: CogIcon,
       duration: "30 minutes",
       details: [
-        "Install required tools (Node.js, Git, etc.)",
-        "Set up your IDE with EFTDM extensions",
-        "Configure version control",
-        "Prepare your team workspace"
+        "Install Cursor AI IDE and required tools (Node.js, Git, etc.)",
+        "Configure Cursor AI with EFTDM prompts and templates",
+        "Set up version control and project structure",
+        "Prepare your team workspace with Cursor AI collaboration"
       ]
     },
     {
       id: 4,
       title: "Create Your FSD",
-      description: "Define your project requirements",
+      description: "Define your project requirements with Cursor AI assistance",
       icon: DocumentTextIcon,
       duration: "2-4 hours",
       details: [
-        "Use the enhanced FSD template",
-        "Include UXD images or Figma links",
-        "Generate Mermaid diagrams",
-        "Define user stories and acceptance criteria"
+        "Use the enhanced FSD template in Cursor AI",
+        "Include UXD images or Figma links for AI analysis",
+        "Generate Mermaid diagrams using Cursor AI prompts",
+        "Define user stories and acceptance criteria with AI assistance"
       ]
     },
     {
       id: 5,
       title: "Generate Technical Specs",
-      description: "Create TSD and RTSD documents",
+      description: "Create TSD and RTSD documents with Cursor AI",
       icon: CodeBracketIcon,
       duration: "1-2 hours",
       details: [
-        "Run automated TSD generation",
-        "Create RTSD with UXD integration",
-        "Define architecture and technology stack",
-        "Plan microservices and APIs"
+        "Run automated TSD generation using Cursor AI prompts",
+        "Create RTSD with UXD integration via AI analysis",
+        "Define architecture and technology stack with AI assistance",
+        "Plan microservices and APIs using Cursor AI recommendations"
       ]
     },
     {
       id: 6,
       title: "Execute Development",
-      description: "Follow the 7-phase process",
+      description: "Follow the 7-phase process with Cursor AI",
       icon: RocketLaunchIcon,
       duration: "1-2 weeks",
       details: [
-        "Phase 1: FSD Analysis & Design Integration",
-        "Phase 2: Implementation Planning",
-        "Phase 3: Project Setup",
-        "Phase 4: Backend Implementation",
-        "Phase 5: Frontend Implementation",
-        "Phase 6: Integration & Testing",
-        "Phase 7: Deployment & Optimization"
+        "Phase 1: FSD Analysis & Design Integration with Cursor AI",
+        "Phase 2: Implementation Planning using AI recommendations",
+        "Phase 3: Project Setup with automated Cursor AI workflows",
+        "Phase 4: Backend Implementation with AI-assisted coding",
+        "Phase 5: Frontend Implementation with real-time AI validation",
+        "Phase 6: Integration & Testing with AI-powered test generation",
+        "Phase 7: Deployment & Optimization using Cursor AI insights"
       ]
     },
     {
@@ -135,24 +135,24 @@ export default function GettingStarted() {
     {
       title: "For Developers",
       icon: CodeBracketIcon,
-      description: "Get hands-on with EFTDM development workflow",
+      description: "Get hands-on with EFTDM development workflow using Cursor AI",
       steps: [
-        "Set up development environment",
-        "Use automation scripts",
-        "Implement quality gates",
-        "Deploy with confidence"
+        "Set up Cursor AI development environment",
+        "Use EFTDM automation scripts and AI prompts",
+        "Implement quality gates with AI assistance",
+        "Deploy with confidence using Cursor AI insights"
       ],
       duration: "60 minutes"
     },
     {
       title: "For Teams",
       icon: UserIcon,
-      description: "Coordinate team efforts with EFTDM methodology",
+      description: "Coordinate team efforts with EFTDM methodology and Cursor AI",
       steps: [
-        "Establish team roles",
-        "Set up collaboration tools",
-        "Define communication protocols",
-        "Implement review processes"
+        "Establish team roles and Cursor AI collaboration protocols",
+        "Set up shared Cursor AI workspace and prompts",
+        "Define communication protocols with AI assistance",
+        "Implement review processes using Cursor AI features"
       ],
       duration: "30 minutes"
     }
@@ -401,6 +401,99 @@ export default function GettingStarted() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Cursor AI Integration Section */}
+      <div className="bg-blue-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Cursor AI Integration</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Leverage Cursor AI's powerful features to accelerate your EFTDM implementation
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="card">
+              <div className="text-center mb-6">
+                <CodeBracketIcon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">AI-Assisted Coding</h3>
+                <p className="text-gray-600 text-sm">Generate code faster with Cursor AI's intelligent suggestions</p>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Real-time code completion and suggestions
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Automated refactoring and optimization
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Context-aware code generation
+                </li>
+              </ul>
+            </div>
+
+            <div className="card">
+              <div className="text-center mb-6">
+                <DocumentTextIcon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Document Analysis</h3>
+                <p className="text-gray-600 text-sm">Analyze UXD images and Figma designs with AI</p>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Extract design specifications from images
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Generate component mappings automatically
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Create Mermaid diagrams from requirements
+                </li>
+              </ul>
+            </div>
+
+            <div className="card">
+              <div className="text-center mb-6">
+                <RocketLaunchIcon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Automated Workflows</h3>
+                <p className="text-gray-600 text-sm">Streamline development with AI-powered automation</p>
+              </div>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Automated test generation and validation
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Intelligent error detection and fixes
+                </li>
+                <li className="flex items-start">
+                  <CheckCircleIcon className="h-4 w-4 text-green-500 mr-2 mt-0.5" />
+                  Performance optimization suggestions
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-12 p-6 bg-blue-100 border-l-4 border-blue-400 text-blue-800 rounded-lg">
+            <h3 className="text-xl font-semibold mb-2">Cursor AI Setup for EFTDM</h3>
+            <p className="mb-4">
+              Configure Cursor AI with EFTDM-specific prompts and templates for maximum efficiency.
+            </p>
+            <div className="space-y-2 text-sm">
+              <p><strong>1. Install Cursor AI:</strong> Download from cursor.sh and set up your workspace</p>
+              <p><strong>2. Import EFTDM Prompts:</strong> Use our pre-built prompt library for each phase</p>
+              <p><strong>3. Configure AI Models:</strong> Set up Claude, GPT-4, or other models for optimal results</p>
+              <p><strong>4. Enable Features:</strong> Turn on code completion, chat, and document analysis</p>
+            </div>
           </div>
         </div>
       </div>

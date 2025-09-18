@@ -142,8 +142,8 @@ export default function Home() {
               EFTDM Knowledge Base
             </h1>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Master the Enhanced Fast-Track Development Methodology with comprehensive documentation, 
-              interactive templates, and real-world examples.
+              Master the Enhanced Fast-Track Development Methodology with Cursor AI integration, 
+              comprehensive documentation, interactive templates, and real-world examples.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/getting-started" className="btn-primary text-lg px-8 py-3">
