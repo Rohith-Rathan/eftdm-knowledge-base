@@ -22,6 +22,64 @@ export default function GettingStarted() {
   const [activeStep, setActiveStep] = useState<number>(1)
   const [expandedSection, setExpandedSection] = useState<string | null>(null)
 
+  const getStepFiles = (stepId: number) => {
+    const stepFiles: { [key: number]: Array<{ name: string; path: string }> } = {
+      1: [
+        { name: 'README.md', path: '/templates/step-1-understand-eftdm/README.md' },
+        { name: 'EFTDM_METHODOLOGY_GUIDE.md', path: '/templates/step-1-understand-eftdm/EFTDM_METHODOLOGY_GUIDE.md' },
+        { name: 'QUALITY_GATES_CHECKLIST.md', path: '/templates/step-1-understand-eftdm/QUALITY_GATES_CHECKLIST.md' },
+        { name: 'BENEFITS_COMPARISON.md', path: '/templates/step-1-understand-eftdm/BENEFITS_COMPARISON.md' },
+        { name: 'CORE_PRINCIPLES.md', path: '/templates/step-1-understand-eftdm/CORE_PRINCIPLES.md' }
+      ],
+      2: [
+        { name: 'README.md', path: '/templates/step-2-download-templates/README.md' },
+        { name: 'INDUSTRY_STANDARD_FSD_TEMPLATE.md', path: '/templates/INDUSTRY_STANDARD_FSD_TEMPLATE.md' },
+        { name: 'INDUSTRY_STANDARD_TSD_TEMPLATE.md', path: '/templates/INDUSTRY_STANDARD_TSD_TEMPLATE.md' },
+        { name: 'INDUSTRY_STANDARD_RTSD_TEMPLATE.md', path: '/templates/INDUSTRY_STANDARD_RTSD_TEMPLATE.md' },
+        { name: 'CURSOR_AI_PROMPT_LIBRARY.md', path: '/templates/CURSOR_AI_PROMPT_LIBRARY.md' }
+      ],
+      3: [
+        { name: 'README.md', path: '/templates/step-3-prepare-project/README.md' },
+        { name: 'CURSOR_AI_SETUP_GUIDE.md', path: '/templates/step-3-prepare-project/CURSOR_AI_SETUP_GUIDE.md' },
+        { name: 'PROJECT_STRUCTURE_TEMPLATE/', path: '/templates/step-3-prepare-project/PROJECT_STRUCTURE_TEMPLATE/' },
+        { name: 'GIT_WORKFLOW.md', path: '/templates/step-3-prepare-project/GIT_WORKFLOW.md' },
+        { name: 'ENVIRONMENT_SETUP.md', path: '/templates/step-3-prepare-project/ENVIRONMENT_SETUP.md' }
+      ],
+      4: [
+        { name: 'README.md', path: '/templates/step-4-create-fsd/README.md' },
+        { name: 'INDUSTRY_STANDARD_FSD_TEMPLATE.md', path: '/templates/INDUSTRY_STANDARD_FSD_TEMPLATE.md' },
+        { name: 'UXD_ANALYSIS_GUIDE.md', path: '/templates/step-4-create-fsd/UXD_ANALYSIS_GUIDE.md' },
+        { name: 'FIGMA_INTEGRATION_GUIDE.md', path: '/templates/step-4-create-fsd/FIGMA_INTEGRATION_GUIDE.md' },
+        { name: 'MERMAID_DIAGRAM_EXAMPLES.md', path: '/templates/step-4-create-fsd/MERMAID_DIAGRAM_EXAMPLES.md' }
+      ],
+      5: [
+        { name: 'README.md', path: '/templates/step-5-generate-specs/README.md' },
+        { name: 'INDUSTRY_STANDARD_TSD_TEMPLATE.md', path: '/templates/INDUSTRY_STANDARD_TSD_TEMPLATE.md' },
+        { name: 'INDUSTRY_STANDARD_RTSD_TEMPLATE.md', path: '/templates/INDUSTRY_STANDARD_RTSD_TEMPLATE.md' },
+        { name: 'ARCHITECTURE_DESIGN_GUIDE.md', path: '/templates/step-5-generate-specs/ARCHITECTURE_DESIGN_GUIDE.md' },
+        { name: 'TECHNOLOGY_STACK_RECOMMENDATIONS.md', path: '/templates/step-5-generate-specs/TECHNOLOGY_STACK_RECOMMENDATIONS.md' }
+      ],
+      6: [
+        { name: 'README.md', path: '/templates/step-6-execute-development/README.md' },
+        { name: 'PHASE_1_FSD_ANALYSIS.md', path: '/templates/step-6-execute-development/PHASE_1_FSD_ANALYSIS.md' },
+        { name: 'PHASE_2_IMPLEMENTATION_PLANNING.md', path: '/templates/step-6-execute-development/PHASE_2_IMPLEMENTATION_PLANNING.md' },
+        { name: 'PHASE_3_PROJECT_SETUP.md', path: '/templates/step-6-execute-development/PHASE_3_PROJECT_SETUP.md' },
+        { name: 'PHASE_4_BACKEND_IMPLEMENTATION.md', path: '/templates/step-6-execute-development/PHASE_4_BACKEND_IMPLEMENTATION.md' },
+        { name: 'PHASE_5_FRONTEND_IMPLEMENTATION.md', path: '/templates/step-6-execute-development/PHASE_5_FRONTEND_IMPLEMENTATION.md' },
+        { name: 'PHASE_6_INTEGRATION_TESTING.md', path: '/templates/step-6-execute-development/PHASE_6_INTEGRATION_TESTING.md' },
+        { name: 'PHASE_7_DEPLOYMENT_OPTIMIZATION.md', path: '/templates/step-6-execute-development/PHASE_7_DEPLOYMENT_OPTIMIZATION.md' }
+      ],
+      7: [
+        { name: 'README.md', path: '/templates/step-7-deploy-monitor/README.md' },
+        { name: 'DEPLOYMENT_GUIDE.md', path: '/templates/step-7-deploy-monitor/DEPLOYMENT_GUIDE.md' },
+        { name: 'MONITORING_SETUP.md', path: '/templates/step-7-deploy-monitor/MONITORING_SETUP.md' },
+        { name: 'PERFORMANCE_OPTIMIZATION.md', path: '/templates/step-7-deploy-monitor/PERFORMANCE_OPTIMIZATION.md' },
+        { name: 'SECURITY_MONITORING.md', path: '/templates/step-7-deploy-monitor/SECURITY_MONITORING.md' }
+      ]
+    }
+    return stepFiles[stepId] || []
+  }
+
   const steps = [
     {
       id: 1,
@@ -327,6 +385,23 @@ export default function GettingStarted() {
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h4 className="font-semibold text-gray-900 mb-3">Download Required Files:</h4>
+                <div className="space-y-2">
+                  {getStepFiles(activeStep).map((file, index) => (
+                    <a
+                      key={index}
+                      href={file.path}
+                      download
+                      className="flex items-center text-sm text-blue-600 hover:text-blue-800"
+                    >
+                      <ArrowDownTrayIcon className="h-4 w-4 mr-2" />
+                      {file.name}
+                    </a>
+                  ))}
+                </div>
               </div>
 
               <div className="mt-6 pt-6 border-t border-gray-200">
