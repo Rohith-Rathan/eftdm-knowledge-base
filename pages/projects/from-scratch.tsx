@@ -16,74 +16,115 @@ export default function FromScratchProject() {
   const [showProjectStructure, setShowProjectStructure] = useState<boolean>(false)
 
   const projectStructure = {
-    name: "your-project",
+    name: "eftdm-project-template",
     folders: [
       {
-        name: "frontend",
+        name: "📄 FSD.md",
+        type: "file",
+        description: "Functional Specification Document"
+      },
+      {
+        name: "📄 TSD.md", 
+        type: "file",
+        description: "Technical Specification Document"
+      },
+      {
+        name: "📄 RTSD.md",
+        type: "file", 
+        description: "Refined Technical Specification Document"
+      },
+      {
+        name: "📄 Mermaid_Diagrams.md",
+        type: "file",
+        description: "Visual flowcharts and diagrams"
+      },
+      {
+        name: "📁 frontend/",
         type: "folder",
         children: [
-          { name: "src", type: "folder", children: [
-            { name: "components", type: "folder" },
-            { name: "views", type: "folder" },
-            { name: "assets", type: "folder" }
+          { name: "📄 package.json", type: "file" },
+          { name: "📄 vite.config.js", type: "file" },
+          { name: "📄 tsconfig.json", type: "file" },
+          { name: "📁 src/", type: "folder", children: [
+            { name: "📁 components/", type: "folder" },
+            { name: "📁 views/", type: "folder" },
+            { name: "📁 assets/", type: "folder" },
+            { name: "📄 main.ts", type: "file" },
+            { name: "📄 App.vue", type: "file" }
           ]},
-          { name: "package.json", type: "file" },
-          { name: "vite.config.js", type: "file" }
+          { name: "📄 README.md", type: "file" }
         ]
       },
       {
-        name: "backend",
+        name: "📁 backend/",
         type: "folder",
         children: [
-          { name: "src", type: "folder", children: [
-            { name: "routes", type: "folder" },
-            { name: "models", type: "folder" },
-            { name: "middleware", type: "folder" }
+          { name: "📄 package.json", type: "file" },
+          { name: "📄 tsconfig.json", type: "file" },
+          { name: "📁 src/", type: "folder", children: [
+            { name: "📁 routes/", type: "folder" },
+            { name: "📁 models/", type: "folder" },
+            { name: "📁 middleware/", type: "folder" },
+            { name: "📄 server.ts", type: "file" }
           ]},
-          { name: "package.json", type: "file" },
-          { name: "server.ts", type: "file" }
+          { name: "📄 README.md", type: "file" }
         ]
       },
       {
-        name: "database",
+        name: "📁 database/",
         type: "folder",
         children: [
-          { name: "migrations", type: "folder" },
-          { name: "seeds", type: "folder" },
-          { name: "schema.sql", type: "file" }
+          { name: "📄 schema.sql", type: "file" },
+          { name: "📁 migrations/", type: "folder" },
+          { name: "📁 seeds/", type: "folder" }
         ]
       },
       {
-        name: "docs",
+        name: "📁 docs/",
         type: "folder",
         children: [
-          { name: "FSD.md", type: "file" },
-          { name: "TSD.md", type: "file" },
-          { name: "RTSD.md", type: "file" },
-          { name: "README.md", type: "file" }
+          { name: "📄 EFTDM_METHODOLOGY.md", type: "file" },
+          { name: "📄 CURSOR_AI_PROMPTS.md", type: "file" },
+          { name: "📄 QUALITY_GATES.md", type: "file" },
+          { name: "📄 DEPLOYMENT_GUIDE.md", type: "file" }
         ]
       },
       {
-        name: "tests",
+        name: "📁 tests/",
         type: "folder",
         children: [
-          { name: "unit", type: "folder" },
-          { name: "integration", type: "folder" },
-          { name: "e2e", type: "folder" }
+          { name: "📁 unit/", type: "folder" },
+          { name: "📁 integration/", type: "folder" },
+          { name: "📁 e2e/", type: "folder" }
         ]
+      },
+      {
+        name: "📄 .env.example",
+        type: "file",
+        description: "Environment variables template"
+      },
+      {
+        name: "📄 README.md",
+        type: "file",
+        description: "Project setup & run instructions"
+      },
+      {
+        name: "📄 .gitignore",
+        type: "file",
+        description: "Git ignore rules"
       }
     ]
   }
 
   const renderFolderStructure = (items: any[], level = 0) => {
     return items.map((item, index) => (
-      <div key={index} className={`ml-${level * 4} flex items-center py-1`}>
-        {item.type === 'folder' ? (
-          <FolderIcon className="h-4 w-4 text-blue-500 mr-2" />
-        ) : (
-          <DocumentTextIcon className="h-4 w-4 text-gray-500 mr-2" />
-        )}
-        <span className="text-sm text-gray-700">{item.name}</span>
+      <div key={index} className={`ml-${level * 4} py-1`}>
+        <div className="flex items-center">
+          <span className="text-sm text-gray-700 font-mono">{item.name}</span>
+          {item.description && (
+            <span className="text-xs text-gray-500 ml-2 italic">({item.description})</span>
+          )}
+        </div>
         {item.children && (
           <div className="ml-4">
             {renderFolderStructure(item.children, level + 1)}
@@ -202,9 +243,16 @@ export default function FromScratchProject() {
               <div className="bg-gray-50 rounded-lg p-6">
                 <div className="flex items-center mb-4">
                   <FolderIcon className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="font-semibold text-gray-900">{projectStructure.name}/</span>
+                  <span className="font-semibold text-gray-900 font-mono">{projectStructure.name}/</span>
                 </div>
                 {renderFolderStructure(projectStructure.folders)}
+                <div className="mt-4 p-3 bg-blue-50 rounded border-l-4 border-blue-400">
+                  <p className="text-blue-800 text-sm">
+                    <strong>📋 What's included:</strong> Complete EFTDM methodology files, 
+                    pre-configured frontend (Vue.js), backend (Node.js), database setup, 
+                    comprehensive documentation, and Cursor AI integration prompts.
+                  </p>
+                </div>
               </div>
             )}
             
