@@ -116,9 +116,12 @@ export default function Home() {
                 <Link href="/methodology" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                   Methodology
                 </Link>
-                <Link href="/getting-started" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Getting Started
-                </Link>
+                        <Link href="/how-it-works" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                          How It Works
+                        </Link>
+                        <Link href="/getting-started" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                          Getting Started
+                        </Link>
                 <Link href="/templates" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                   Templates
                 </Link>
@@ -141,19 +144,52 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               EFTDM Knowledge Base
             </h1>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Master the Enhanced Fast-Track Development Methodology with Cursor AI integration, 
-              comprehensive documentation, interactive templates, and real-world examples.
-            </p>
+                    <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                      Just provide your requirements and get a complete, production-ready application in 1-2 weeks. 
+                      AI-powered development with Cursor AI integration.
+                    </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/getting-started" className="btn-primary text-lg px-8 py-3">
+              <Link href="/how-it-works" className="btn-primary text-lg px-8 py-3">
                 <RocketLaunchIcon className="h-5 w-5 inline mr-2" />
+                How It Works
+              </Link>
+              <Link href="/getting-started" className="bg-white text-primary-600 hover:bg-gray-50 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
+                <BookOpenIcon className="h-5 w-5 inline mr-2" />
                 Get Started
               </Link>
-              <Link href="/methodology" className="bg-white text-primary-600 hover:bg-gray-50 font-medium py-3 px-8 rounded-lg transition-colors duration-200 text-lg">
-                <BookOpenIcon className="h-5 w-5 inline mr-2" />
-                Learn Methodology
-              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Quick Start Section */}
+      <div className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              🚀 Super Simple: Just Tell Us What You Want!
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              No complex setup, no overwhelming documentation. Just provide your requirements and get a complete application.
+            </p>
+            
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-4xl mx-auto">
+              <h3 className="text-lg font-semibold text-blue-900 mb-4">Example: Timesheet App</h3>
+              <div className="text-left">
+                <p className="text-gray-700 mb-2"><strong>What you say:</strong></p>
+                <p className="text-gray-600 mb-4 italic">"I need a timesheet app where employees can upload files, fill forms, and get manager approval."</p>
+                
+                <p className="text-gray-700 mb-2"><strong>What AI creates:</strong></p>
+                <ul className="text-gray-600 space-y-1">
+                  <li>✅ Complete project with frontend, backend, database</li>
+                  <li>✅ User authentication and file upload system</li>
+                  <li>✅ Manager approval workflow</li>
+                  <li>✅ Dashboard with analytics</li>
+                  <li>✅ All documentation and tests</li>
+                </ul>
+                
+                <p className="text-gray-700 mt-4"><strong>Time:</strong> <span className="text-green-600 font-semibold">1-2 weeks instead of 2-3 months!</span></p>
+              </div>
             </div>
           </div>
         </div>
