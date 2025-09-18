@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { 
   BookOpenIcon, 
   RocketLaunchIcon, 
@@ -409,7 +409,7 @@ export default function Test() {
           {/* Active Phase Tests */}
           <div className="card">
             <div className="flex items-center mb-6">
-              <phases[activePhase - 1].icon className="h-8 w-8 text-primary-600 mr-4" />
+              {React.createElement(phases[activePhase - 1].icon, { className: "h-8 w-8 text-primary-600 mr-4" })}
               <div>
                 <h3 className="text-2xl font-semibold text-gray-900">
                   Phase {activePhase}: {phases[activePhase - 1].title}

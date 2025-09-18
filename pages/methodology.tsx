@@ -10,7 +10,8 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
   PlayIcon,
-  ArrowDownTrayIcon
+  ArrowDownTrayIcon,
+  ClockIcon
 } from '@heroicons/react/24/outline'
 
 export default function Methodology() {

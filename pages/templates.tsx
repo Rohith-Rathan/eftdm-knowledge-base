@@ -12,7 +12,8 @@ import {
   CheckCircleIcon,
   StarIcon,
   FolderIcon,
-  DocumentIcon
+  DocumentIcon,
+  PlayIcon
 } from '@heroicons/react/24/outline'
 
 export default function Templates() {
