@@ -266,7 +266,10 @@ export default function StartFromScratch() {
                 <ArrowDownTrayIcon className="h-12 w-12 text-blue-500 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Download Project Folder</h3>
                 <p className="text-gray-600 mb-4">Get the complete project structure with all files and documentation</p>
-                <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                <button 
+                  onClick={() => window.open('/api/download-template', '_blank')}
+                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                >
                   Download Now
                 </button>
               </div>
