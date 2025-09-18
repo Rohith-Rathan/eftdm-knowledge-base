@@ -119,18 +119,21 @@ export default function Home() {
                         <Link href="/how-it-works" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                           How It Works
                         </Link>
+                        <Link href="/projects" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                          Projects
+                        </Link>
                         <Link href="/getting-started" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                           Getting Started
                         </Link>
-                <Link href="/templates" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Templates
-                </Link>
-                <Link href="/examples" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Examples
-                </Link>
-                <Link href="/test" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
-                  Test Components
-                </Link>
+                        <Link href="/templates" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                          Templates
+                        </Link>
+                        <Link href="/examples" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                          Examples
+                        </Link>
+                        <Link href="/test" className="text-gray-500 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                          Test Components
+                        </Link>
               </div>
             </div>
           </div>
